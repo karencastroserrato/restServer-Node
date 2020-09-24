@@ -13,6 +13,22 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // =================================
 let urlDB;
 
+// =================================
+// Seed - Semilla de aplicacion 
+// =================================
+
+process.env.SEED = process.env.SEED || 'seed-semilla-secreta-desarrollo';
+
+// =================================
+// Fecha de expiracion 
+// =================================
+// 60 segundos
+// 60 minutos
+// 24 horas
+// 30 dias
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
