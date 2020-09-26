@@ -28,6 +28,11 @@ process.env.SEED = process.env.SEED || 'seed-semilla-secreta-desarrollo';
 // 30 dias
 process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
+// =================================
+// Google CLIENT_ID 
+// =================================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '378382033972-b00fl4pc8jas6lla9tdl8n02pnsk2hsj.apps.googleusercontent.com';
 
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
